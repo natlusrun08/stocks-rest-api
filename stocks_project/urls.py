@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.urls import path, include
 
-path('', include('stocks_api.urls')),
-
+urlpatterns = [
+    path('', include('stocks_api.urls')),
+]
 
